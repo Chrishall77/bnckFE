@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css';
+import Artists from './Components/Artists';
+import Stages from './Components/Stages';
+import Performances from './Components/Performances';
 
 function App() {
   return (
     <div>
-      <h1>BNCK</h1>
+      <Artists />
+      <Stages />
+      <Performances />
     </div>
   );
 }
