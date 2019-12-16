@@ -7,8 +7,8 @@ const initial = {
     name: "",
     bio:"",
     image:"",
-    artists: artists.artists,
-    stages: stages.stages,
+    artists: artists,
+    stages: stages,
     performances: performances.performances,
 };
 

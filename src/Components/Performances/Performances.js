@@ -8,8 +8,8 @@ const Performances = ({ performances }) => (
                 <li key = { performance.id }>
                     Artist: { performance.artist_id } 
                     Stage: { performance.stage_id }
-                    Duration: { performances.duration }
-                    Timedate: { performances.timedate }
+                    Duration: { performance.duration }
+                    Timedate: { performance.timedate }
                 </li>
                )
            }
