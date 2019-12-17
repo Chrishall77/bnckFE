@@ -1,0 +1,2 @@
+Created a static HTML page that contains the HTML code for all of the different components we will be using in the app. While most of it can be hard coded because the information will not change, some of it, such as the header title, will need to be written in JSX when the code is put into the React files, due to needing the use of props, so these have not been hard coded.
+
