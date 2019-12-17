@@ -42,4 +42,42 @@ body {
   color: #516D73;
 }
 
+.landingBanner {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.landingBackground {
+  background-image: url("../images/landingBackground.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: auto;
+  background-size: cover;
+}
+
+.buttonStyleOne {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonStyleOne1 {
+  background: #F29D52;
+}
+
+.buttonStyleOne2 {
+  background: #F2784B;
+}
+
+.buttonStyleOne a {
+  width: auto;
+  font-size: 25px;
+  text-decoration: none;
+  color: #516D73;
+}
+
 /*# sourceMappingURL=custom.scss.map */
