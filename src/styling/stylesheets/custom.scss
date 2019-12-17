@@ -56,6 +56,7 @@ body {
   height: 500px;
   width: auto;
   background-size: cover;
+  padding: 10px;
 }
 
 .logoText {
@@ -91,7 +92,7 @@ body {
   color: #516D73;
 }
 
-.stagesBackground {
+.stagesBackgroundPosition {
   margin: 20px 10px 20px 10px;
   padding: 20px 10px;
   display: flex;
@@ -160,6 +161,52 @@ body {
 }
 
 .buttonStyleTwo a {
+  width: auto;
+  font-size: 25px;
+  text-decoration: none;
+  color: #516D73;
+}
+
+.artistsBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.artistsBackground {
+  background-image: url("../images/artistsBackground.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: auto;
+  background-size: cover;
+}
+
+.artistList {
+  display: block;
+  margin: 0 auto;
+}
+
+.artist {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.buttonStyleThree {
+  height: 75px;
+  width: 350px;
+  background: #F29D52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonStyleThree a {
   width: auto;
   font-size: 25px;
   text-decoration: none;

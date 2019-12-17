@@ -1,0 +1,45 @@
+.artistsBackgroundPosition {
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    overflow: scroll;
+}
+
+.artistsBackground {
+    background-image: url('../images/artistsBackground.jpg');
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: auto;
+    background-size: cover;
+}
+
+.artistList {
+    display: block;
+    margin: 0 auto;
+}
+
+.artist {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.buttonStyleThree {
+    height: 75px;
+    width: 350px;
+    background: $colourLightOrange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonStyleThree a {
+    width: auto;
+    font-size: $fontSizeLarge;
+    text-decoration: none;
+    color: $colourGreen;
+}
