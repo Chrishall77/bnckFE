@@ -25,6 +25,17 @@
     // }
 }
 
+.logoText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $colourYellow;
+    font-size: $fontSizeLogo;
+    font-weight: bolder;
+    font-family: 'Montserrat', arial, sans-serif;
+    margin-top: 10px;
+}
+
 .buttonStyleOne {
     height: 100px;
     display: flex;

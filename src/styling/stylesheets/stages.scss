@@ -1,0 +1,74 @@
+.stagesBackground {
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.stagesBackground {
+    background-image: url('../images/stagesBackground.jpg');
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: auto;
+    background-size: cover;
+    padding-left: 40px;
+}
+
+.gridPosition {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.stagesGrid {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 20px;
+}
+
+.duttyDisco {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.bigLogger {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.cathedral {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.smoothMoovers {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.buttonStyleTwo {
+    height: 175px;
+    width: 175px;
+    padding: 10px;
+    background: $colourLightOrange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonStyleTwo h3 a {
+    display: block;
+    text-align: center;
+}
+
+.buttonStyleTwo a {
+    width: auto;
+    font-size: $fontSizeLarge;
+    text-decoration: none;
+    color: $colourGreen;
+}
