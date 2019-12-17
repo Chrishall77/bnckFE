@@ -1,0 +1,75 @@
+.stageBackgroundPosition {
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    overflow: scroll;
+}
+
+.stageBackground {
+    background-image: url('../images/performancesBackground.jpg');
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: auto;
+    background-size: cover;
+    position: relative;
+
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     background-image: linear-gradient(to bottom right, $colourLightOrange, $colourRed);
+    //     opacity: .6;
+    // }
+}
+
+.performanceWrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.timeButtonTime {
+    width: auto;
+    font-size: $fontSizeRegular;
+    font-weight: bold;
+    text-decoration: none;
+    color: $colourGreen;
+}
+
+.timeButtonArtist {
+    width: auto;
+    font-size: $fontSizeMedium;
+    font-weight: bold;
+    text-decoration: none;
+    color: $colourGreen;
+}
+
+.buttonStyleFour {
+    height: 75px;
+    width: 100px;
+    background: $colourLightOrange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.buttonStyleFive {
+    height: 75px;
+    width: 300px;
+    background: $colourLightOrange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}

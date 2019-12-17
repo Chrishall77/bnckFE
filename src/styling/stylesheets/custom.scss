@@ -1,0 +1,335 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap");
+}
+.banner {
+  background: #516D73;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navLink {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navLink img {
+  width: 35px;
+  height: auto;
+}
+
+.navBurger {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navBurger img {
+  width: 25px;
+  height: auto;
+}
+
+.landingBanner {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 520px;
+  font-family: "Roboto", arial, sans-serif;
+  color: #516D73;
+}
+
+.landingContainer {
+  padding: 20px 10px 20px 10px;
+}
+
+.stagesContainer {
+  padding: 20px 10px 20px 10px;
+}
+
+.artistsContainer {
+  padding: 20px 10px 20px 10px;
+}
+
+.stageContainer {
+  padding: 20px 10px 20px 10px;
+}
+
+.artistBioContainer {
+  padding: 20px 10px 20px 10px;
+}
+
+.landingBackground {
+  background-image: url("../images/landingBackground2.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: auto;
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+}
+
+.logoText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F2BC57;
+  font-size: 15vh;
+  font-weight: bolder;
+  font-family: "Montserrat", arial, sans-serif;
+  margin-top: 17vh;
+}
+
+.buttonStyleOne {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonStyleOne1 {
+  background: #F29D52;
+}
+
+.buttonStyleOne2 {
+  background: #F2784B;
+}
+
+.buttonStyleOne a {
+  width: auto;
+  font-size: 25px;
+  text-decoration: none;
+  color: #516D73;
+}
+
+.stagesBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+.stagesBackground {
+  background-image: url("../images/stagesBackground2.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: auto;
+  background-size: cover;
+  padding-left: 40px;
+  position: relative;
+}
+
+.gridPosition {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.stagesGrid {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: repeat(2, 200px);
+  grid-gap: 20px;
+}
+
+.duttyDisco {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.bigLogger {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.cathedral {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.smoothMoovers {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.buttonStyleTwo {
+  height: 175px;
+  width: 175px;
+  padding: 10px;
+  background: #F29D52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonStyleTwo h3 a {
+  display: block;
+  text-align: center;
+}
+
+.buttonStyleTwo a {
+  width: auto;
+  font-size: 25px;
+  text-decoration: none;
+  color: #516D73;
+}
+
+.artistsBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.artistsBackground {
+  background-image: url("../images/artistsBackground2.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: auto;
+  background-size: cover;
+  position: relative;
+}
+
+.artistList {
+  display: block;
+  margin: 0 auto;
+}
+
+.artist {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.buttonStyleThree {
+  height: 75px;
+  width: 350px;
+  background: #F29D52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonStyleThree a {
+  width: auto;
+  font-size: 25px;
+  text-decoration: none;
+  color: #516D73;
+}
+
+.stageBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.stageBackground {
+  background-image: url("../images/performancesBackground.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: auto;
+  background-size: cover;
+  position: relative;
+}
+
+.performanceWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.timeButtonTime {
+  width: auto;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #516D73;
+}
+
+.timeButtonArtist {
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #516D73;
+}
+
+.buttonStyleFour {
+  height: 75px;
+  width: 100px;
+  background: #F29D52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.buttonStyleFive {
+  height: 75px;
+  width: 300px;
+  background: #F29D52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.artistBioBackgroundPosition {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.artistBioBackground {
+  height: 700px;
+  width: auto;
+  background: #516D73;
+  position: relative;
+}
+
+.artistBioImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0px 0px 150px 150px;
+}
+
+.artistBioText {
+  height: 350px;
+  overflow: scroll;
+  font-family: "Open Sans";
+  font-size: 15px;
+  padding: 10px;
+  color: #F28B50;
+}
+
+/*# sourceMappingURL=custom.scss.map */

@@ -1,0 +1,32 @@
+// GLOBAL STYLES
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 520px;
+    font-family: 'Roboto', arial, sans-serif;
+    color: $colourGreen;
+}
+
+.landingContainer {
+    padding: 20px 10px 20px 10px;
+}
+
+.stagesContainer {
+    padding: 20px 10px 20px 10px;
+}
+
+.artistsContainer {
+    padding: 20px 10px 20px 10px;
+}
+
+.stageContainer {
+    padding: 20px 10px 20px 10px;
+}
+
+.artistBioContainer {
+    padding: 20px 10px 20px 10px;
+}
