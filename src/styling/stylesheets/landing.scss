@@ -1,11 +1,5 @@
-.landingBanner {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-}
-
 .landingBackground {
-    background-image: url('../images/landingBackground.jpg');
+    background-image: url('../images/landingBackground2.jpg');
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -35,7 +29,7 @@
     font-size: $fontSizeLogo;
     font-weight: bolder;
     font-family: 'Montserrat', arial, sans-serif;
-    margin-top: 60px;
+    margin-top: 17vh;
 }
 
 .buttonStyleOne {
