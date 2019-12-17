@@ -45,7 +45,7 @@ body {
 .landingBanner {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 5px;
 }
 
 .landingBackground {
@@ -57,6 +57,7 @@ body {
   width: auto;
   background-size: cover;
   padding: 10px;
+  position: relative;
 }
 
 .logoText {
@@ -110,6 +111,7 @@ body {
   width: auto;
   background-size: cover;
   padding-left: 40px;
+  position: relative;
 }
 
 .gridPosition {
@@ -184,6 +186,7 @@ body {
   height: 700px;
   width: auto;
   background-size: cover;
+  position: relative;
 }
 
 .artistList {
@@ -211,6 +214,71 @@ body {
   font-size: 25px;
   text-decoration: none;
   color: #516D73;
+}
+
+.stageBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.stageBackground {
+  background-image: url("../images/performancesBackground.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: auto;
+  background-size: cover;
+  position: relative;
+}
+
+.performanceWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.timeButtonTime {
+  width: auto;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #516D73;
+}
+
+.timeButtonArtist {
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #516D73;
+}
+
+.buttonStyleFour {
+  height: 75px;
+  width: 100px;
+  background: #F29D52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.buttonStyleFive {
+  height: 75px;
+  width: 300px;
+  background: #F29D52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
 }
 
 /*# sourceMappingURL=custom.scss.map */

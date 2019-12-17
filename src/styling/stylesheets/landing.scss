@@ -1,7 +1,7 @@
 .landingBanner {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
 }
 
 .landingBackground {
@@ -13,6 +13,7 @@
     width: auto;
     background-size: cover;
     padding: 10px;
+    position: relative;
 
     // &:before {
     //     content: '';
