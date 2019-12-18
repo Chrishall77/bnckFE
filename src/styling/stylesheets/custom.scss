@@ -68,6 +68,15 @@ body {
   padding: 20px 10px 20px 10px;
 }
 
+.landingBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
 .landingBackground {
   background-image: url("../images/landingBackground2.jpg");
   background-position: center;
@@ -96,6 +105,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #516D73;
 }
 
 .buttonStyleOne1 {
@@ -138,6 +152,7 @@ body {
   margin-top: 50px;
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .stagesGrid {
@@ -175,6 +190,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #516D73;
+  width: auto;
+  text-decoration: none;
 }
 
 .buttonStyleTwo h3 a {
@@ -211,22 +233,34 @@ body {
 
 .artistList {
   display: block;
+  text-align: center;
+  width: fit-content;
   margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
 }
 
-.artist {
-  display: block;
+.artists {
   margin: 0 auto;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .buttonStyleThree {
   height: 75px;
   width: 350px;
+  padding: 10px;
   background: #F29D52;
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  width: auto;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #516D73;
 }
 
 .buttonStyleThree a {
@@ -246,7 +280,7 @@ body {
 }
 
 .stageBackground {
-  background-image: url("../images/performancesBackground.jpg");
+  background-image: url("../images/performancesBackground2.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -257,12 +291,18 @@ body {
 }
 
 .performanceWrapper {
-  display: flex;
-  justify-content: space-around;
+  display: block;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 30px;
   padding: 10px;
+}
+
+.artist {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .timeButtonTime {

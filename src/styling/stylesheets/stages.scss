@@ -34,6 +34,7 @@
     margin-top: 50px;
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 .stagesGrid {
@@ -71,6 +72,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
+    font-size: $fontSizeLarge;
+    font-weight: bolder;
+    text-decoration: none;
+    color: $colourGreen;
+    width: auto;
+    text-decoration: none;
 }
 
 .buttonStyleTwo h3 a {
