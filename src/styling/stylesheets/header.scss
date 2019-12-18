@@ -1,4 +1,5 @@
 .banner {
+    height: 10vh;
     background: $colourGreen;
     display: flex;
     justify-content: space-between;
@@ -11,8 +12,9 @@
 }
 
 .navLink img {
-    width: 35px;
+    width: 7vh;
     height: auto;
+    fill: $colourYellow;
 }
 
 .navBurger {
@@ -21,8 +23,9 @@
 }
 
 .navBurger img {
-    width: 25px;
+    width: 5vh;
     height: auto;
+    fill: $colourYellow;
 }
 
 // for the landing page
