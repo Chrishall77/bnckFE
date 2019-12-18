@@ -1,5 +1,4 @@
 .stagesBackgroundPosition {
-    margin: 20px 10px 20px 10px;
     padding: 20px 10px;
     display: flex;
     justify-content: center;
@@ -15,7 +14,6 @@
     height: 700px;
     width: auto;
     background-size: cover;
-    padding-left: 40px;
     position: relative;
 
     // &:before {
@@ -67,7 +65,7 @@
 .buttonStyleTwo {
     height: 175px;
     width: 175px;
-    padding: 10px;
+    padding: 50px;
     background: $colourLightOrange;
     display: flex;
     justify-content: center;
@@ -81,7 +79,7 @@
     text-decoration: none;
 }
 
-.buttonStyleTwo h3 a {
+.stagesLink {
     display: block;
     text-align: center;
 }

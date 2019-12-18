@@ -12,7 +12,7 @@
     // background-size: cover;
     height: 700px;
     width: auto;
-    background: $colourGreen;
+    background: $colourLightOrange;
     position: relative;
 
     // &:before {
@@ -39,12 +39,21 @@
     // filter: hue-rotate(200deg);
 }
 
+.artistStages {
+    height: 10vh;
+    width: 60%;
+    display: inline-block;
+    margin-top: -5vh;
+    border-radius: 25px;
+    background: $colourRed;
+}
+
 .artistBioText {
     height: 350px;
     overflow: scroll;
     font-family: 'Open Sans';
     font-size: $fontSizeRegular;
     padding: 10px;
-    color: $colourOrange;
+    color: $colourGreen;
     // border-radius: 50px 50px 0px 0px;
 }  
