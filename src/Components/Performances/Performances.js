@@ -1,19 +1,38 @@
 import React from "react";
 
-const Performances = ({ performances }) => (
+const Performances = ({ performances, stages, titleStage, artists }) => (
     <div>
         <ul>
-           {
-               performances.map((performance, index) =>
-                <li key = { performance.id }>
-                    Artist: { performance.artist_id } 
-                    Stage: { performance.stage_id }
-                    Duration: { performance.duration }
-                    Timedate: { performance.timedate }
-                </li>
-               )
-           }
-            
+            {
+                performances.map((performance) => {
+                    let stageName = stages.find((stage)=> {
+                        return stage.id === performance.stage_id;
+                    })
+                    console.log(stageName); 
+                    
+                    let artistName = artists.find((artist)=> {
+                        return artist.id === performance.artist_id;
+                    })
+                    console.log(artistName); 
+
+                    return (
+
+                        <li key={performance.id}>
+                            <div>
+                                <p>Start: {performance.timedate} </p>
+                                <p>End: {performance.timedate + performance.duration} </p>
+                            </div>
+                            <div>
+                                <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
+                            </div>
+
+                        </li>
+
+                    )
+                }
+                )
+            }
+
         </ul>
     </div>
 );
