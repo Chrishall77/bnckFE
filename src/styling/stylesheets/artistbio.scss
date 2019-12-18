@@ -1,0 +1,50 @@
+.artistBioBackgroundPosition {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.artistBioBackground {
+    // background-image: url('../images/artistBackground.jpg');
+    // background-position: center;
+    // background-attachment: scroll;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    height: 700px;
+    width: auto;
+    background: $colourGreen;
+    position: relative;
+
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     background-image: linear-gradient(to bottom right, $colourLightOrange, $colourRed);
+    //     opacity: .6;
+    // }
+    // }
+}
+
+.artistBioImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px 0px 150px 150px;
+    // -webkit-filter: hue-rotate(200deg);
+    // filter: hue-rotate(200deg);
+}
+
+.artistBioText {
+    height: 350px;
+    overflow: scroll;
+    font-family: 'Open Sans';
+    font-size: $fontSizeRegular;
+    padding: 10px;
+    color: $colourOrange;
+    // border-radius: 50px 50px 0px 0px;
+}  

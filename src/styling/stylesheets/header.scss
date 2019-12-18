@@ -1,0 +1,33 @@
+.banner {
+    background: $colourGreen;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navLink {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navLink img {
+    width: 35px;
+    height: auto;
+}
+
+.navBurger {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navBurger img {
+    width: 25px;
+    height: auto;
+}
+
+// for the landing page
+.landingBanner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
