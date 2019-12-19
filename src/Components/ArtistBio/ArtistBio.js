@@ -1,18 +1,20 @@
 import React from 'react';
+import Performances from '../Performances';
 
-const ArtistBio = () => (
-
+const ArtistBio = ({ artist }) => (
+    
     <>
-        <div className="artistBioBackground artistBioBackgroundPosition artistName" id="artist#">
-            <img className="artistBioImage" src={ artist.image } />
-            <div className="artistStages">
-                {/* { STAGE INFO } */}
+           { console.log(artist) }
+        
+            <div className="artistBioBackground artistBioBackgroundPosition artistName" id="artist#">
+                <img className="artistBioImage" src="https://placebear.com/200/300" />
+                <div className="artistBioText">
+                    <p>Hello World!</p>
+                </div>
+                <div className="artistStages">
+                    <Performances titleStage={ true }/>
+                </div>
             </div>
-            <div className="artistBioText">
-                { artist.bio }
-
-            </div>
-        </div>
     </>
 
 );

@@ -1,7 +1,7 @@
 import React from "react";
 
-const Performances = ({ performances, stages, titleStage, artists }) => (
-    <div className="stageBackground stageBackgroundPosition">
+const Performances = ({ performances, stages, titleStage, artists, background }) => (
+   
         <ul className="performanceWrapper">
             {
                 performances.map((performance) => {
@@ -19,8 +19,8 @@ const Performances = ({ performances, stages, titleStage, artists }) => (
 
                         <li className="artist" key={performance.id}>
                             <div className="buttonStyleFour timeButtonTime">
-                                <p>Start: {performance.timedate} </p>
-                                <p>End: {performance.timedate + performance.duration} </p>
+                                <p>Start: {performance.starttime} </p>
+                                <p>End: {performance.endtime} </p>
                             </div>
                             <div className="buttonStyleFive timeButtonArtist">
                                 <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
@@ -33,7 +33,7 @@ const Performances = ({ performances, stages, titleStage, artists }) => (
                 )
             }
         </ul>
-    </div>
+    
 );
 
 export default Performances;
