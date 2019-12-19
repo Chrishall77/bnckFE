@@ -12,7 +12,7 @@ const store = createStore(
 );
 
 store.subscribe(() => {
-    let state = store.getState();
+    return store.getState();
 });
 
 export default store;
