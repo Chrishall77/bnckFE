@@ -6,8 +6,8 @@ const Header = ({ children }) => (
     <>
         <div className="banner">
             <div className="navLink"> <img src={potato} /> </div>
-            <h1 class="bannerTitle"> { children }</h1>
-            <div class="navBurger"> <img src={burger} /> </div>
+            <h1 className="bannerTitle"> { children }</h1>
+            <div className="navBurger"> <img src={burger} /> </div>
         </div>
     </>
 );

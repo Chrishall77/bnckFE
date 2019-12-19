@@ -1,23 +1,30 @@
 
 import React from "react";
+import Header from "../Header/Header";
+import { Link } from "react-router-dom";
 
 const Artists = ({ artists, handleClick }) => (
-    <div className="artistsBackground artistsBackgroundPosition">
-        <ul className="artistList">
-           {
-               artists.map((artist, index) =>
-                <li key = { artist.id }
-                    className="buttonStyleThree artists"
-                    onClick = { () => handleClick(artist.id) }
-                >
-                    { artist.name }
+    <>
+        <Header>Artists</Header>
+        <div className="artistsBackground artistsBackgroundPosition">
+            <ul className="artistList">
+            {
+                artists.map((artist) =>
+                <Link to = { `artists/${ artist.id }` } > 
+                    <li key = { artist.id }
+                        className="buttonStyleThree artists"
+                        onClick = { () => handleClick(artist.id) }
+                    >
+                        { artist.name }
 
-                </li>
-               )
-           }
-            
-        </ul>
-    </div>
+                    </li>
+                </Link>
+                )
+            }
+                
+            </ul>
+        </div>
+    </>
 );
 
 export default Artists;

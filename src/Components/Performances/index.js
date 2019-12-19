@@ -2,18 +2,17 @@ import { connect } from "react-redux";
 import Performances from "./Performances";
 import { getPerformances } from "../../data/action/api";
 
-const mapStateToProps = (state, { stage }) => {
-    console.log(stage);
+const mapStateToProps = (state, { id }) => {
     return {
-        performances: state.performances.filter((performance )=> performance.stage_id === +stage),
+        performances: state.performances.filter((performance )=> performance.stage_id === +id),
         stages: state.stages,
         artists: state.artists,
     };
 };
 
-const mapDispatchToProps = ( dispatch, { stage, referrer } ) => {
+const mapDispatchToProps = ( dispatch, { id, referrer } ) => {
     return {
-        handleLoad: () => dispatch(getPerformances(referrer, stage))
+        handleLoad: () => dispatch(getPerformances(referrer, id))
     }
 }
 
