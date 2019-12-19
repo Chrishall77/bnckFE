@@ -42,9 +42,9 @@ const Performances = ({ performances, stages, titleStage, artists }) => (
                 }
                 )
             }
-
         </ul>
     </div>
 );
 
 export default Performances;
+

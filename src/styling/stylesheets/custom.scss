@@ -5,19 +5,22 @@
   src: url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap");
 }
 .banner {
-  background: #516D73;
+  height: 10vh;
+  background: #F2784B;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
 }
 
 .navLink {
   display: flex;
   justify-content: flex-start;
+  fill: #516D73;
 }
 
 .navLink img {
-  width: 35px;
+  width: 7vh;
   height: auto;
 }
 
@@ -27,7 +30,7 @@
 }
 
 .navBurger img {
-  width: 25px;
+  width: 5vh;
   height: auto;
 }
 
@@ -68,6 +71,15 @@ body {
   padding: 20px 10px 20px 10px;
 }
 
+.landingBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
 .landingBackground {
   background-image: url("../images/landingBackground2.jpg");
   background-position: center;
@@ -96,6 +108,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #516D73;
 }
 
 .buttonStyleOne1 {
@@ -114,7 +131,6 @@ body {
 }
 
 .stagesBackgroundPosition {
-  margin: 20px 10px 20px 10px;
   padding: 20px 10px;
   display: flex;
   justify-content: center;
@@ -130,7 +146,6 @@ body {
   height: 700px;
   width: auto;
   background-size: cover;
-  padding-left: 40px;
   position: relative;
 }
 
@@ -138,6 +153,7 @@ body {
   margin-top: 50px;
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .stagesGrid {
@@ -170,14 +186,21 @@ body {
 .buttonStyleTwo {
   height: 175px;
   width: 175px;
-  padding: 10px;
+  padding: 50px;
   background: #F29D52;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #516D73;
+  width: auto;
+  text-decoration: none;
 }
 
-.buttonStyleTwo h3 a {
+.stagesLink {
   display: block;
   text-align: center;
 }
@@ -190,7 +213,6 @@ body {
 }
 
 .artistsBackgroundPosition {
-  margin: 20px 10px 20px 10px;
   padding: 20px 10px;
   display: block;
   text-align: center;
@@ -211,22 +233,34 @@ body {
 
 .artistList {
   display: block;
+  text-align: center;
+  width: fit-content;
   margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
 }
 
-.artist {
-  display: block;
+.artists {
   margin: 0 auto;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .buttonStyleThree {
   height: 75px;
   width: 350px;
+  padding: 10px;
   background: #F29D52;
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
+  width: auto;
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #516D73;
 }
 
 .buttonStyleThree a {
@@ -237,7 +271,6 @@ body {
 }
 
 .stageBackgroundPosition {
-  margin: 20px 10px 20px 10px;
   padding: 20px 10px;
   display: block;
   text-align: center;
@@ -246,23 +279,29 @@ body {
 }
 
 .stageBackground {
-  background-image: url("../images/performancesBackground.jpg");
+  background-image: url("../images/performancesBackground2.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
   height: 700px;
-  width: auto;
+  width: 520px;
   background-size: cover;
   position: relative;
 }
 
 .performanceWrapper {
-  display: flex;
-  justify-content: space-around;
+  display: block;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 30px;
   padding: 10px;
+}
+
+.artist {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .timeButtonTime {
@@ -310,7 +349,7 @@ body {
 .artistBioBackground {
   height: 700px;
   width: auto;
-  background: #516D73;
+  background: #F29D52;
   position: relative;
 }
 
@@ -323,13 +362,43 @@ body {
   border-radius: 0px 0px 150px 150px;
 }
 
+.artistStages {
+  height: 10vh;
+  width: 60%;
+  display: inline-block;
+  margin-top: -5vh;
+  border-radius: 25px;
+  background: #F2784B;
+}
+
 .artistBioText {
   height: 350px;
   overflow: scroll;
   font-family: "Open Sans";
   font-size: 15px;
   padding: 10px;
-  color: #F28B50;
+  color: #516D73;
+}
+
+.bigLoggerBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.bigLoggerBackground {
+  background-image: url("../images/bigLoggerBackground2.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: auto;
+  background-size: cover;
+  padding: 10px;
+  position: relative;
 }
 
 /*# sourceMappingURL=custom.scss.map */
