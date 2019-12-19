@@ -8,7 +8,7 @@ const Stages = ({ stages, handleClick }) => (
            {
                stages.map((stage, index) =>
 
-                <Link to = { `stages/${ stage.id }` } > 
+                <Link to = { `stages/${ stage.id }` } className="linkStyle"> 
                     <li key = { stage.id }
                         className="buttonStyleTwo"
                         onClick = { () => handleClick(stage.id) }
