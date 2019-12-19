@@ -1,6 +1,6 @@
 import React from "react";
 
-const Performances = ({ performances, stages, titleStage, artists, background }) => (
+const Performances = ({ performances, stages, titleStage, artists}) => (
    
         <ul className="performanceWrapper">
             {
