@@ -5,6 +5,13 @@ const Performances = ({ performances, stages, titleStage, artists }) => (
         <ul>
             {
                 performances.map((performance) => {
+
+                    let startTime = new Date( performance.timedate );
+                    let duration = performance.duration;
+                    startTime.setHours( startTime.getHours() + duration );
+                    console.log(duration);
+                    console.log(startTime);
+
                     let stageName = stages.find((stage)=> {
                         return stage.id === performance.stage_id;
                     })
@@ -19,8 +26,11 @@ const Performances = ({ performances, stages, titleStage, artists }) => (
 
                         <li key={performance.id}>
                             <div>
-                                <p>Start: {performance.timedate} </p>
-                                <p>End: {performance.timedate + performance.duration} </p>
+                                <p>Start: { performance.timedate } </p>
+                                <p>End: {
+                                                                
+                                    
+                                    } </p>
                             </div>
                             <div>
                                 <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
