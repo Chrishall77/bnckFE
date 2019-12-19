@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 import ArtistBio from './ArtistBio';
 
-const mapStateToProps = state => {
+const mapStateToProps = ({ artists }) => {
+    console.log("ArtistBio: Index")
     return {
-        artists: state.artist,
+        artists: artists,
     }
 }
 
