@@ -13,7 +13,7 @@ export default class Performances extends React.Component {
     render() {
         const {performances, stages, titleStage, artists } = this.props;
         return(
-            <div>
+            <div className="performanceBackground">
                 <ul className="performanceWrapper">
                     {
                         performances.map((performance) => {

@@ -5,9 +5,10 @@ import { withRouter } from 'react-router-dom';
 
 const StageInfo = ({ history }) => console.log(history)||(
     
-    <div className="stageBackground stageBackgroundPosition">
+    <div className="stageInfoBackground stageInfoBackgroundPosition">
         <Performances 
             titleStage={ false }
+            className="stageInfoBackground stageInfoBackgroundPosition"
         />
     </div>
 );
