@@ -8,7 +8,7 @@ const Stages = ({ stages }) => (
                 <li key = { stage.id }
                     className="buttonStyleTwo"
                 >
-                    { stage.name }
+                    <span className="stagesLink"> { stage.name }</span>
                 </li>
                )
            }

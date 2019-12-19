@@ -1,10 +1,23 @@
 import React from 'react';
-import './App.css';
+import Header from './Components/Header/Header';
+import Landing from './Components/Landing/Landing';
+import Artists from './Components/Artists';
+import Stages from './Components/Stages';
+import Performances from './Components/Performances';
+import ArtistBio from './Components/ArtistBio/ArtistBio';
+// import BigLogger from './Components/Stages/BigLogger';
 
 function App() {
   return (
     <div>
-      <h1>BNCK</h1>
+      <Header />
+      <br />
+      <Landing />
+      <Artists />
+      <Stages />
+      <Performances />
+      <ArtistBio />
+      {/* <BigLogger /> */}
     </div>
   );
 }

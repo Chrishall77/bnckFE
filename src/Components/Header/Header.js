@@ -6,7 +6,7 @@ const Header = () => (
     <>
         <div className="banner">
             <div className="navLink"> <img src={potato} /> </div>
-            <h1 class="bannerTitle"> { /*PAGE TITLE*/ } </h1>
+            <h1 class="bannerTitle"> { /*PAGE TITLE*/ } NICK CAVE </h1>
             <div class="navBurger"> <img src={burger} /> </div>
         </div>
     </>

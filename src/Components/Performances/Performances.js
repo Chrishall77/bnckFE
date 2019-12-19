@@ -14,7 +14,7 @@ const Performances = ({ performances }) => (
                     <div key = { performance.id } 
                         className="buttonStyleFive timeButtonArtist"
                     >
-                        Stage: { performance.stage_id }
+                        Artist: { performance.artist_id } 
                     </div>
                 </li>
                )
@@ -30,3 +30,23 @@ export default Performances;
 // Stage: { performance.stage_id }
 // Duration: { performances.duration }
 // Timedate: { performances.timedate }
+
+{/* <li className="artist">
+                    <div key = { performance.id } 
+                        className="buttonStyleFour timeButtonTime"
+                    >
+                        Timedate: { performances.timedate }
+                    </div>
+                    <div key = { performance.id } 
+                        className="buttonStyleFive timeButtonArtist"
+                    >
+                      <ul className="performanceWrapper">
+                          <li className="artist">
+                            Artist: { performance.artist_id } 
+                          </li>
+                          <li className="artist">
+                            Duration: { performances.duration }
+                          </li>
+                      </ul>
+                    </div>
+                </li> */}
