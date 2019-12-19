@@ -1,9 +1,11 @@
 import React from 'react';
 import Performances from '../Performances';
+import Header from "../Header/Header";
 
 const ArtistBio = ({ artist }) => (
     
     <>
+        <Header>Name of Artist</Header>
            { console.log(artist) }
         
             <div className="artistBioBackground artistBioBackgroundPosition artistName" id="artist#">
