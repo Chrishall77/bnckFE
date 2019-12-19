@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const Artists = ({ artists }) => (
@@ -9,6 +10,7 @@ const Artists = ({ artists }) => (
                     className="buttonStyleThree artists"
                 >
                     { artist.name }
+
                 </li>
                )
            }

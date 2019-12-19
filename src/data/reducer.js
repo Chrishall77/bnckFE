@@ -1,15 +1,29 @@
-const holdArtists = (state, { id, name, bio, image }) => {
-    return {...state,
-        id,
-        name,
-        bio,
-        image,
+const setArtists = (state, action) => {
+    return {
+        ...state,
+        artists: action.artists,
+    }
+}
+
+const setStages = (state, action) => {
+    return {
+        ...state,
+        stages: action.stages,
+    }
+}
+
+const setPerformances = (state, action) => {
+    return {
+        ...state,
+        performances: action.performances,
     }
 }
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case "holdArtists": return holdArtists(state); 
+        case "setStages": return setStages(state, action); 
+        case "setArtists": return setArtists(state, action); 
+        case "setPerformances": return setPerformances(state, action); 
         default: return state;
     } 
 };

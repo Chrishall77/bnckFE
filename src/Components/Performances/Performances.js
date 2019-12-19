@@ -1,52 +1,40 @@
 import React from "react";
 
-const Performances = ({ performances }) => (
+const Performances = ({ performances, stages, titleStage, artists }) => (
     <div className="stageBackground stageBackgroundPosition">
         <ul className="performanceWrapper">
-           {
-               performances.map((performance, index) =>
-               <li className="artist">
-                    <div key = { performance.id } 
-                        className="buttonStyleFour timeButtonTime"
-                    >
-                        Timedate: { performances.timedate }
-                    </div>
-                    <div key = { performance.id } 
-                        className="buttonStyleFive timeButtonArtist"
-                    >
-                        Artist: { performance.artist_id } 
-                    </div>
-                </li>
-               )
-           }
-            
+            {
+                performances.map((performance) => {
+                    let stageName = stages.find((stage)=> {
+                        return stage.id === performance.stage_id;
+                    })
+                    console.log(stageName); 
+                    
+                    let artistName = artists.find((artist)=> {
+                        return artist.id === performance.artist_id;
+                    })
+                    console.log(artistName); 
+
+                    return (
+
+                        <li className="artist" key={performance.id}>
+                            <div className="buttonStyleFour timeButtonTime">
+                                <p>Start: {performance.timedate} </p>
+                                <p>End: {performance.timedate + performance.duration} </p>
+                            </div>
+                            <div className="buttonStyleFive timeButtonArtist">
+                                <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
+                            </div>
+
+                        </li>
+
+                    )
+                }
+                )
+            }
         </ul>
     </div>
 );
 
 export default Performances;
 
-// Artist: { performance.artist_id } 
-// Stage: { performance.stage_id }
-// Duration: { performances.duration }
-// Timedate: { performances.timedate }
-
-{/* <li className="artist">
-                    <div key = { performance.id } 
-                        className="buttonStyleFour timeButtonTime"
-                    >
-                        Timedate: { performances.timedate }
-                    </div>
-                    <div key = { performance.id } 
-                        className="buttonStyleFive timeButtonArtist"
-                    >
-                      <ul className="performanceWrapper">
-                          <li className="artist">
-                            Artist: { performance.artist_id } 
-                          </li>
-                          <li className="artist">
-                            Duration: { performances.duration }
-                          </li>
-                      </ul>
-                    </div>
-                </li> */}
