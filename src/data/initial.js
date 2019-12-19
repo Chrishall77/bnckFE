@@ -1,5 +1,3 @@
-//import performances from "./seeds/performances";
-
 const initial = {
     id: 0,
     name: "",
@@ -9,6 +7,8 @@ const initial = {
     stages:[],
     performances:[],
     loaded: false,
+    stage:0,
+    artist: 0,
 };
 
 export default initial;

@@ -16,8 +16,8 @@ export const getArtists = () => (dispatch) => {
     }).catch((error)=>{console.error(error)})
 }
 
-export const getPerformances = () => (dispatch) => {
-    axios.get("/artists/11/performances").then(({ data })=>{
+export const getPerformances = ( referrer, id ) => (dispatch) => {
+    axios.get(`/${ referrer }/${ id }/performances`).then(({ data })=>{
         console.log(dispatch);
         dispatch(setPerformances(data.data));
     }).catch((error)=>{console.error(error)})
