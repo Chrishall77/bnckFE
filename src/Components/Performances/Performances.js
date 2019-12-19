@@ -1,32 +1,40 @@
 import React from "react";
 
-const Performances = ({ performances }) => (
-    <div className="stageBackground stageBackgroundPosition">
-        <ul className="performanceWrapper">
-           {
-               performances.map((performance, index) =>
-               <li className="artist">
-                    <div key = { performance.id } 
-                        className="buttonStyleFour timeButtonTime"
-                    >
-                        Timedate: { performances.timedate }
-                    </div>
-                    <div key = { performance.id } 
-                        className="buttonStyleFive timeButtonArtist"
-                    >
-                        Stage: { performance.stage_id }
-                    </div>
-                </li>
-               )
-           }
-            
+const Performances = ({ performances, stages, titleStage, artists }) => (
+    <div>
+        <ul>
+            {
+                performances.map((performance) => {
+                    let stageName = stages.find((stage)=> {
+                        return stage.id === performance.stage_id;
+                    })
+                    console.log(stageName); 
+                    
+                    let artistName = artists.find((artist)=> {
+                        return artist.id === performance.artist_id;
+                    })
+                    console.log(artistName); 
+
+                    return (
+
+                        <li key={performance.id}>
+                            <div>
+                                <p>Start: {performance.timedate} </p>
+                                <p>End: {performance.timedate + performance.duration} </p>
+                            </div>
+                            <div>
+                                <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
+                            </div>
+
+                        </li>
+
+                    )
+                }
+                )
+            }
         </ul>
     </div>
 );
 
 export default Performances;
 
-// Artist: { performance.artist_id } 
-// Stage: { performance.stage_id }
-// Duration: { performances.duration }
-// Timedate: { performances.timedate }
