@@ -85,8 +85,8 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 500px;
   width: auto;
+  height: 50vh;
   background-size: cover;
   padding: 10px;
   position: relative;
@@ -143,7 +143,7 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 70vh;
   width: auto;
   background-size: cover;
   position: relative;
@@ -226,7 +226,7 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 70vh;
   width: auto;
   background-size: cover;
   position: relative;
@@ -285,7 +285,7 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 70vh;
   width: 520px;
   background-size: cover;
   position: relative;
@@ -351,7 +351,7 @@ body {
 }
 
 .artistBioBackground {
-  height: 700px;
+  height: 70vh;
   width: auto;
   background: #F29D52;
   position: relative;
@@ -398,7 +398,7 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 70vh;
   width: auto;
   background-size: cover;
   padding: 10px;
