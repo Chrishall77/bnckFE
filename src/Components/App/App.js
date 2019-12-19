@@ -24,7 +24,9 @@ class App extends React.Component {
           <Landing />
           <Route exact path="/artists" component={ Artists } />
           <Route exact path="/stages" component={ Stages }/>
-          <Performances titleStage = { false } />
+          <Route exact path="/:referrer/:id" render={ ({ match }) => ( <Performances stage={ match.params.id } referrer={ match.params.referrer } />
+          ) } />
+          {/* <Performances titleStage = { false } /> */}
         </div>
       </Router>
     );
