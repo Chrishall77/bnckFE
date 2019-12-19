@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import Stages from "./Stages";
+import { setStage } from "../../data/action/state";
 
 const mapStateToProps = state => {
     return {
@@ -7,4 +8,12 @@ const mapStateToProps = state => {
         };
     };
 
-export default connect(mapStateToProps)(Stages);
+const mapDispatchToProps = dispatch => {
+    return {
+        handleClick: (stageId) => {
+            dispatch(setStage(stageId));
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Stages);

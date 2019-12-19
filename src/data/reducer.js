@@ -12,6 +12,13 @@ const setStages = (state, action) => {
     }
 }
 
+const setStage = (state, action) => {
+    return {
+        ...state,
+        stage: action.stage,
+    }
+}
+
 const setPerformances = (state, action) => {
     return {
         ...state,
@@ -21,7 +28,8 @@ const setPerformances = (state, action) => {
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case "setStages": return setStages(state, action); 
+        case "setStages": return setStages(state, action);
+        case "setStage": return setStage(state, action); 
         case "setArtists": return setArtists(state, action); 
         case "setPerformances": return setPerformances(state, action); 
         default: return state;

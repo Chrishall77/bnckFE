@@ -6,12 +6,6 @@ const Performances = ({ performances, stages, titleStage, artists }) => (
             {
                 performances.map((performance) => {
 
-                    let startTime = new Date( performance.timedate );
-                    let duration = performance.duration;
-                    startTime.setHours( startTime.getHours() + duration );
-                    console.log(duration);
-                    console.log(startTime);
-
                     let stageName = stages.find((stage)=> {
                         return stage.id === performance.stage_id;
                     })

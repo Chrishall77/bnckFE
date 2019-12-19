@@ -9,6 +9,7 @@ const initial = {
     stages:[],
     performances:[],
     loaded: false,
+    stage:0,
 };
 
 export default initial;

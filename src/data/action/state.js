@@ -19,4 +19,11 @@ export const setPerformances = (data) => (
     }
 )
 
+export const setStage = (data) => (
+    {
+        type: "setStage",
+        stage: data,
+    }
+)
+
 
