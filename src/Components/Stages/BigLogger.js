@@ -1,14 +1,14 @@
 import React from 'react';
 
 const BigLogger = ({ stages }) => (
-    <div className="stagesBackground stagesBackgroundPosition">
-        <ul className="stagesGrid gridPosition">
+    <div className="bigLoggerBackground bigLoggerBackgroundPosition">
+        <ul className="">
            {
                stages.map((stage, index) =>
-                <li key = { stage.id }
-                    className="buttonStyleTwo bigLogger"
+                <li key = { stage.id[1] }
+                    className="buttonStyleThree bigLogger"
                 >
-                    <span className="stagesLink"> { stage.name }</span>
+                    <span className="stagesLink"> { /* ARTIST NAME X 4 */ }</span>
                 </li>
                )
            }

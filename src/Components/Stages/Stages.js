@@ -7,6 +7,7 @@ const Stages = ({ stages, handleClick }) => (
         <ul className="stagesGrid gridPosition">
            {
                stages.map((stage, index) =>
+
                 <Link to = { `stages/${ stage.id }` } > 
                     <li key = { stage.id }
                         className="buttonStyleTwo"
@@ -15,6 +16,7 @@ const Stages = ({ stages, handleClick }) => (
                         { stage.name }
                     </li>
                 </Link>
+
                )
            }
             

@@ -1,11 +1,14 @@
 import React from "react";
 
 
+
 export default class Performances extends React.Component {
+
 
     componentDidMount() {
         this.props.handleLoad();
     }
+
 
     render() {
         const {performances, stages, titleStage, artists } = this.props;
@@ -37,11 +40,13 @@ export default class Performances extends React.Component {
                             )
                         }
                     )
+
                     }
                 </ul>
             </div>
         );
     }
 }
+
 
 
