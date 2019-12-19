@@ -3,11 +3,7 @@ import ArtistBio from './ArtistBio';
 
 const mapStateToProps = state => {
     return {
-        artistId: state.artist,
-        artists: state.artists,
-        artist: state.artists.find((artist) => {
-            return artist.id === state.artist
-        })
+        artists: state.artist,
     }
 }
 
