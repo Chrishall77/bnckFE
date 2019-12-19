@@ -1,7 +1,12 @@
 import React from 'react';
 import Artists from '../Artists';
 import Stages from '../Stages';
+import Landing from '../Landing/Landing';
 import Performances from '../Performances';
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
 
 class App extends React.Component {
 
@@ -14,11 +19,14 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Artists />
-        <Stages />
-        <Performances titleStage = { false } />
-      </div>
+      <Router>
+        <div>
+          <Landing />
+          <Route exact path="/artists" component={ Artists } />
+          <Route exact path="/stages" component={ Stages }/>
+          <Performances titleStage = { false } />
+        </div>
+      </Router>
     );
   }
 }

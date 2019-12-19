@@ -1,5 +1,3 @@
-//import performances from "./seeds/performances";
-
 const initial = {
     id: 0,
     name: "",
