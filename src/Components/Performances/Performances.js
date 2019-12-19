@@ -45,11 +45,7 @@ export default class Performances extends React.Component {
                                         <p>End: { formatDate(endtime) } </p>
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
-<<<<<<< HEAD
                                         <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
-=======
-                                        <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p> 
->>>>>>> ca09a64de7afdc0504c90737e16185b2a11d6a6a
                                     </div>
                                 </li>
                             )
