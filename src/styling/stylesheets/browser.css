@@ -390,7 +390,7 @@ body {
 }
 
 .bigLoggerBackground {
-  background-image: url("../images/bigLoggerBackground2.jpg");
+  background-image: url("../images/bigLoggerBackground.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -401,4 +401,4 @@ body {
   position: relative;
 }
 
-/*# sourceMappingURL=custom.scss.map */
+/*# sourceMappingURL=browser.css.map */

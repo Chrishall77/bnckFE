@@ -1,0 +1,20 @@
+.smoothMooversPosition {
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    overflow: scroll;
+}
+
+.smoothMooversBackground {
+    background-image: url('../images/cathedralBackground.jpg');
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+    background-size: cover;
+    padding: 10px;
+    position: relative;
+}

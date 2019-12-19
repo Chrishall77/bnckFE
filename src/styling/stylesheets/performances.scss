@@ -1,5 +1,4 @@
 .stageBackgroundPosition {
-    margin: 20px 10px 20px 10px;
     padding: 20px 10px;
     display: block;
     text-align: center;
@@ -8,12 +7,12 @@
 }
 
 .stageBackground {
-    background-image: url('../images/performancesBackground.jpg');
+    background-image: url('../images/performancesBackground2.jpg');
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
     height: 700px;
-    width: auto;
+    width: 520px;
     background-size: cover;
     position: relative;
 
@@ -30,12 +29,18 @@
 }
 
 .performanceWrapper {
-    display: flex;
-    justify-content: space-around;
+    display: block;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 30px;
     padding: 10px;
+}
+
+.artist {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .timeButtonTime {

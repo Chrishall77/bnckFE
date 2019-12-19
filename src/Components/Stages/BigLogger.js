@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 
-const Stages = ({ stages }) => (
+const BigLogger = ({ stages }) => (
     <div className="stagesBackground stagesBackgroundPosition">
         <ul className="stagesGrid gridPosition">
            {
                stages.map((stage, index) =>
                 <li key = { stage.id }
-                    className="buttonStyleTwo"
+                    className="buttonStyleTwo bigLogger"
                 >
-                    { stage.name }
+                    <span className="stagesLink"> { stage.name }</span>
                 </li>
                )
            }
             
         </ul>
     </div>
-);
+)
 
-export default Stages;
+export default BigLogger;
