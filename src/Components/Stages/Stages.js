@@ -1,15 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Stages = ({ stages }) => (
+
+const Stages = ({ stages, handleClick }) => (
     <div className="stagesBackground stagesBackgroundPosition">
         <ul className="stagesGrid gridPosition">
            {
                stages.map((stage, index) =>
-                <li key = { stage.id }
-                    className="buttonStyleTwo"
-                >
-                    <span className="stagesLink"> { stage.name }</span>
-                </li>
+
+                <Link to = { `stages/${ stage.id }` } > 
+                    <li key = { stage.id }
+                        className="buttonStyleTwo"
+                        onClick = { () => handleClick(stage.id) }
+                    >
+                        { stage.name }
+                    </li>
+                </Link>
+
                )
            }
             
