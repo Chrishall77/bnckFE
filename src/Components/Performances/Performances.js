@@ -1,39 +1,47 @@
 import React from "react";
 
-const Performances = ({ performances, stages, titleStage, artists }) => (
-    <div>
-        <ul>
-            {
-                performances.map((performance) => {
 
-                    let stageName = stages.find((stage)=> {
-                        return stage.id === performance.stage_id;
-                    })
-                    console.log(stageName); 
-                    
-                    let artistName = artists.find((artist)=> {
-                        return artist.id === performance.artist_id;
-                    })
-                    console.log(artistName); 
+export default class Performances extends React.Component {
 
-                    return (
+    componentDidMount() {
+        this.props.handleLoad();
+    }
 
-                        <li key={performance.id}>
-                            <div>
-                                <p>Start: { performance.starttime } </p>
-                                <p>End: { performance.endtime } </p>
-                            </div>
-                            <div>
-                                <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
-                            </div>
-                        </li>
+    render() {
+        const {performances, stages, titleStage, artists } = this.props;
+        return(
+            <div>
+                <ul>
+                    {
+                        performances.map((performance) => {
+        
+                            let stageName = stages.find((stage)=> {
+                                return stage.id === performance.stage_id;
+                            })
+                            
+                            let artistName = artists.find((artist)=> {
+                                return artist.id === performance.artist_id;
+                            })
+        
+                            return (
+        
+                                <li key={ performance.id }>
+                                    <div>
+                                        <p>Start: { performance.starttime } </p>
+                                        <p>End: { performance.endtime } </p>
+                                    </div>
+                                    <div>
+                                        {/* <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p> */}
+                                    </div>
+                                </li>
+                            )
+                        }
                     )
-                }
-            )
-            }
-        </ul>
-    </div>
-);
+                    }
+                </ul>
+            </div>
+        );
+    }
+}
 
-export default Performances;
 
