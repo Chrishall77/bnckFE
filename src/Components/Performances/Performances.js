@@ -14,7 +14,7 @@ export default class Performances extends React.Component {
         const {performances, stages, titleStage, artists } = this.props;
         return(
             <div>
-                <ul>
+                <ul className="performanceWrapper">
                     {
                         performances.map((performance) => {
         
@@ -28,13 +28,13 @@ export default class Performances extends React.Component {
         
                             return (
         
-                                <li key={ performance.id }>
-                                    <div>
+                                <li className="artist" key={ performance.id }>
+                                    <div className="buttonStyleFour timeButtonTime">
                                         <p>Start: { performance.starttime } </p>
                                         <p>End: { performance.endtime } </p>
                                     </div>
-                                    <div>
-                                        {/* <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p> */}
+                                    <div className="buttonStyleFive timeButtonArtist">
+                                        <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p> 
                                     </div>
                                 </li>
                             )
