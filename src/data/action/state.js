@@ -12,6 +12,13 @@ export const setArtists = (data) => (
     }
 )
 
+export const setArtist = (data) => (
+    {
+        type: "setArtist",
+        artist: data,
+    }
+)
+
 export const setPerformances = (data) => (
     {
         type: "setPerformances",

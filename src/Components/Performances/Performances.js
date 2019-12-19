@@ -20,21 +20,16 @@ const Performances = ({ performances, stages, titleStage, artists }) => (
 
                         <li key={performance.id}>
                             <div>
-                                <p>Start: { performance.timedate } </p>
-                                <p>End: {
-                                                                
-                                    
-                                    } </p>
+                                <p>Start: { performance.starttime } </p>
+                                <p>End: { performance.endtime } </p>
                             </div>
                             <div>
                                 <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
                             </div>
-
                         </li>
-
                     )
                 }
-                )
+            )
             }
         </ul>
     </div>

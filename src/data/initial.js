@@ -10,6 +10,7 @@ const initial = {
     performances:[],
     loaded: false,
     stage:0,
+    artist: 0,
 };
 
 export default initial;
