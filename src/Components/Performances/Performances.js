@@ -38,15 +38,15 @@ export default class Performances extends React.Component {
 
                             return (
         
-                                <ul className="artist" key={ performance.id }>
+                                <li className="artist" key={ performance.id }>
                                     <div className="buttonStyleFour timeButtonTime">
-                                        <li>Start: { formatDate(starttime) } </li>
-                                        <li>End: { formatDate(endtime) } </li>
+                                        <p>Start: { formatDate(starttime) } </p>
+                                        <p>End: { formatDate(endtime) } </p>
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
-                                        <li>{ titleStage ? stageName.name : artistName.name }</li>
+                                        <p>{ titleStage ? stageName.name : artistName.name }</p>
                                     </div>
-                                </ul>
+                                </li>
                             )
                         }
                     )
