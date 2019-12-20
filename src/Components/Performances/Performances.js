@@ -11,6 +11,7 @@ export default class Performances extends React.Component {
 
 
     render() {
+
         const {performances, stages, titleStage, artists, id } = this.props;
 
         return(
@@ -28,7 +29,7 @@ export default class Performances extends React.Component {
                             })
         
 
-                            return (
+                    
 
                             let formatDate = (date) => {
 
@@ -48,15 +49,10 @@ export default class Performances extends React.Component {
                                 <li className="artist" key={ performance.id }>
                                     <div className="buttonStyleFour timeButtonTime">
                                         <p>Start: { formatDate(starttime) } </p>
-                                        <p>{ performance.id }</p>
                                         <p>End: { formatDate(endtime) } </p>
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
-
-                                        
-
-                                        <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
-
+                                        <p>{ titleStage ? stageName.name : artistName.name }</p>
                                     </div>
                                 </li>
                             )
