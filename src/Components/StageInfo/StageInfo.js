@@ -4,14 +4,21 @@ import { withRouter } from 'react-router-dom';
 import Header from '../Header/Header';
 
 
-const StageInfo = ({ location }) => {
+const StageInfo = ({ location, stages }) => {
     const { pathname } = location;
     const [ ,referrer, id ] = pathname.split("/")
-    console.log(referrer)
-    console.log(id)
+    
+   console.log(stages);
+
+    const stageData = stages.find((stage)=> {
+        return stage.id === +id
+    })
+
+    console.log(stageData)
+
     return (
         <>
-            <Header>NAME</Header>
+            <Header>{ stageData ? stageData.name : "" }</Header>
             <div className={`stage${id}`}>
                 <Performances 
                     referrer={ referrer }

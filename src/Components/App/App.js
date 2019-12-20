@@ -3,7 +3,7 @@ import Artists from '../Artists';
 import Stages from '../Stages';
 import Landing from '../Landing/Landing';
 import ArtistBio from '../ArtistBio'; 
-import StageInfo from '../StageInfo/StageInfo';
+import StageInfo from '../StageInfo';
 import {
   BrowserRouter as Router,
   Route,
