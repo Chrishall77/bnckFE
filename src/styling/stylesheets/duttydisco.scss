@@ -1,18 +1,18 @@
-.duttyDiscoBackgroundPosition {
-    margin: 20px 10px 20px 10px;
-    padding: 20px 10px;
+.stage2 {
+    // margin: 20px 10px 20px 10px;
+    // padding: 20px 10px;
     display: block;
     text-align: center;
     width: 100%;
     overflow: scroll;
 }
 
-.duttyDiscoBackground {
+.stage2 {
     background-image: url('../images/duttyDiscoBackground.jpg');
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 100vh;
     width: auto;
     background-size: cover;
     padding: 10px;

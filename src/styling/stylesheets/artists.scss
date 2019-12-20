@@ -11,8 +11,8 @@
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 70vh;
-    width: auto;
+    height: 100vh;
+    width: 100vw;
     background-size: cover;
     position: relative;
 
@@ -35,6 +35,7 @@
     margin: 0 auto;
     padding: 0;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .artists {
@@ -45,14 +46,14 @@
 }
 
 .buttonStyleThree {
-    height: 75px;
-    width: 350px;
+    height: 10vh;
+    width: 70vw;
     padding: 10px;
     background: $colourLightOrange;
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
+    list-style-type: none;
     width: auto;
     font-size: $fontSizeLarge;
     font-weight: bolder;
@@ -66,4 +67,5 @@
     font-size: $fontSizeLarge;
     text-decoration: none;
     color: $colourGreen;
+    text-decoration: none;
 }

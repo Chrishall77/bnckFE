@@ -21,7 +21,7 @@
 
 .navLink img {
   width: 7vh;
-  height: auto;
+  height: 100vw;
 }
 
 .navBurger {
@@ -42,11 +42,13 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
   margin: 0 auto;
-  width: 520px;
+  width: 100vw;
+  height: 100vh;
   font-family: "Roboto", arial, sans-serif;
   color: #516D73;
 }
@@ -85,8 +87,8 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  width: auto;
-  height: 50vh;
+  width: 100vw;
+  height: 70vh;
   background-size: cover;
   padding: 10px;
   position: relative;
@@ -109,7 +111,7 @@ body {
 }
 
 .buttonStyleOne {
-  height: 100px;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,8 +149,8 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 70vh;
-  width: auto;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   position: relative;
 }
@@ -201,13 +203,13 @@ body {
   text-decoration: none;
   color: #516D73;
   width: auto;
-  text-decoration: none;
   border-radius: 5px;
 }
 
 .stagesLink {
   display: block;
   text-align: center;
+  text-decoration: none;
 }
 
 .buttonStyleTwo a {
@@ -230,8 +232,8 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 70vh;
-  width: auto;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   position: relative;
 }
@@ -243,6 +245,7 @@ body {
   margin: 0 auto;
   padding: 0;
   text-decoration: none;
+  list-style-type: none;
 }
 
 .artists {
@@ -253,14 +256,14 @@ body {
 }
 
 .buttonStyleThree {
-  height: 75px;
-  width: 350px;
+  height: 10vh;
+  width: 70vw;
   padding: 10px;
   background: #F29D52;
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
+  list-style-type: none;
   width: auto;
   font-size: 25px;
   font-weight: bolder;
@@ -274,6 +277,7 @@ body {
   font-size: 25px;
   text-decoration: none;
   color: #516D73;
+  text-decoration: none;
 }
 
 .stageBackgroundPosition {
@@ -289,8 +293,8 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 70vh;
-  width: 520px;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   position: relative;
 }
@@ -324,32 +328,40 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: #516D73;
+  text-decoration: none;
 }
 
 .buttonStyleFour {
-  height: 75px;
-  width: 175px;
+  height: 10vh;
+  width: 20vw;
   background: #F29D52;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 10px 10px 10px;
   border-radius: 5px;
+  text-decoration: none;
+}
+
+.buttonStyleFour p {
+  text-decoration: none;
 }
 
 .buttonStyleFive {
-  height: 75px;
-  width: 275px;
+  height: 10vh;
+  width: 40vw;
   background: #F29D52;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 10px 10px 10px;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .performanceButton {
   text-align: center;
+  text-decoration: none;
 }
 
 .artistBioBackgroundPosition {
@@ -359,8 +371,8 @@ body {
 }
 
 .artistBioBackground {
-  height: 70vh;
-  width: auto;
+  height: 100vh;
+  width: 100vw;
   background: #F29D52;
   position: relative;
 }
@@ -374,15 +386,6 @@ body {
   border-radius: 0px 0px 150px 150px;
 }
 
-.artistStages {
-  height: 10vh;
-  width: 60%;
-  display: inline-block;
-  margin-top: -5vh;
-  border-radius: 25px;
-  background: #F2784B;
-}
-
 .artistBioText {
   height: 350px;
   overflow: scroll;
@@ -392,7 +395,7 @@ body {
   color: #516D73;
 }
 
-.bigLoggerBackgroundPosition {
+.stageInfoBackgroundPosition {
   margin: 20px 10px 20px 10px;
   padding: 20px 10px;
   display: block;
@@ -401,76 +404,88 @@ body {
   overflow: scroll;
 }
 
-.bigLoggerBackground {
+.stageInfoBackground {
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+}
+
+.stage1 {
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.stage1 {
   background-image: url("../images/bigLoggerBackground.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 70vh;
-  width: auto;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   padding: 10px;
   position: relative;
 }
 
-.cathedralBackgroundPosition {
-  margin: 20px 10px 20px 10px;
-  padding: 20px 10px;
+.stage3 {
   display: block;
   text-align: center;
   width: 100%;
   overflow: scroll;
 }
 
-.cathedralBackground {
+.stage3 {
   background-image: url("../images/cathedralBackground.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  width: auto;
-  height: 70vh;
+  width: 100vw;
+  height: 100vh;
   background-size: cover;
   padding: 10px;
   position: relative;
 }
 
-.duttyDiscoBackgroundPosition {
-  margin: 20px 10px 20px 10px;
-  padding: 20px 10px;
+.stage2 {
   display: block;
   text-align: center;
   width: 100%;
   overflow: scroll;
 }
 
-.duttyDiscoBackground {
+.stage2 {
   background-image: url("../images/duttyDiscoBackground.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 100vh;
   width: auto;
   background-size: cover;
   padding: 10px;
   position: relative;
 }
 
-.smoothMooversPosition {
-  margin: 20px 10px 20px 10px;
-  padding: 20px 10px;
+.stage4 {
   display: block;
   text-align: center;
   width: 100%;
   overflow: scroll;
 }
 
-.smoothMooversBackground {
-  background-image: url("../images/cathedralBackground.jpg");
+.stage4 {
+  background-image: url("../images/smoothMooversBackground.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  height: 70vh;
-  width: auto;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   padding: 10px;
   position: relative;

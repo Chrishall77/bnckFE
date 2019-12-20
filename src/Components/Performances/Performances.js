@@ -15,7 +15,7 @@ export default class Performances extends React.Component {
         const {performances, stages, titleStage, artists, id } = this.props;
 
         return(
-            <div className={`performanceBackground stage${id}`}>
+            <div className="performanceBackground">
                 <ul className="performanceWrapper">
                     {
                         performances.map((performance) => {

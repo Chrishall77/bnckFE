@@ -2,12 +2,13 @@
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     margin: 0 auto;
-    width: 520px;
-    height: 70vh;
+    width: 100vw;
+    height: 100vh;
     font-family: 'Roboto', arial, sans-serif;
     color: $colourGreen;
 }
