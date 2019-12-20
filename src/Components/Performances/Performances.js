@@ -30,7 +30,12 @@ export default class Performances extends React.Component {
 
                             let formatDate = (date) => {
 
-                                return date.toLocaleTimeString();
+                                let hours = date.getHours();
+                                let minutes = date.getMinutes();
+                                let minuteFormat = minutes < 10 ? "0" + minutes : minutes;
+                                let hourFormat = hours < 10 ? "0" + hours : hours;
+
+                                return `${hourFormat} : ${minuteFormat}`
 
                             }
 
@@ -43,8 +48,9 @@ export default class Performances extends React.Component {
         
                                 <li className="artist" key={ performance.id }>
                                     <div className="buttonStyleFour timeButtonTime">
-                                        <p>Start: { formatDate(starttime) } </p>
-                                        <p>End: { formatDate(endtime) } </p>
+                                        <p>{ formatDate(starttime) }
+                                        <br/>
+                                        { formatDate(endtime) }</p>
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
                                         <p>{ titleStage ? stageName.name : artistName.name }</p>
