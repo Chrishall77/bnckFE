@@ -1,25 +1,41 @@
 import React from 'react';
 import Performances from '../Performances';
 import Header from "../Header/Header";
+import { withRouter } from "react-router-dom";
 
-const ArtistBio = ({ artist }) => (
-    
-    <>
-        <Header>Name of Artist</Header>
-           { console.log(artist) }
-        
+const ArtistBio = ({ location, artists }) => {
+    const { pathname } = location;
+    const [ ,referrer, id ] = pathname.split("/")
+
+    // let stageName = stages.find((stage)=> {
+    //     return stage.id === performance.stage_id;
+    // })
+    console.log(id);
+    console.log(artists);
+    const artistInfo = artists.find((artist)=> {
+        console.log(artist.id)
+        return artist.id === +id;
+    })
+    console.log(artistInfo);
+
+    return (
+        <>
+            <Header>{ artistInfo ? artistInfo.name : "" }</Header>
             <div className="artistBioBackground artistBioBackgroundPosition artistName" id="artist#">
-                <img className="artistBioImage" src="https://placebear.com/200/300" />
+                <img className="artistBioImage" src={ artistInfo ? artistInfo.image : "" } />
                 <div className="artistBioText">
-                    <p>{ artist.name }</p>
-                    <p>{ artist.bio }</p>
+                    <p>{ artistInfo ? artistInfo.bio : "" }</p>
                 </div>
                 <div className="artistStages">
-                    <Performances titleStage={ true }/>
+                    <Performances 
+                        referrer={ referrer }
+                        id={ id }
+                    />
                 </div>
             </div>
-    </>
+        </>
+    )
 
-);
+};
 
-export default ArtistBio;
+export default withRouter(ArtistBio);

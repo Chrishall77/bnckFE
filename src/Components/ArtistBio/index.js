@@ -1,11 +1,10 @@
 import { connect } from 'react-redux';
 import ArtistBio from './ArtistBio';
 
-const mapStateToProps = state => {
+const mapStateToProps = ({ artists }) => {
+    console.log("ArtistBio: Index")
     return {
-        artist: state.artists.find((artist) => {
-            return artist.id === state.artist
-        })
+        artists: artists,
     }
 }
 

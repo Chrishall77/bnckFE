@@ -2,12 +2,8 @@ import React from 'react';
 import Artists from '../Artists';
 import Stages from '../Stages';
 import Landing from '../Landing/Landing';
-import Performances from '../Performances';
-
 import ArtistBio from '../ArtistBio'; 
 import StageInfo from '../StageInfo/StageInfo';
-import Header from '../Header/Header';
-
 import {
   BrowserRouter as Router,
   Route,
