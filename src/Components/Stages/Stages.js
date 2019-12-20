@@ -9,7 +9,7 @@ const Stages = ({ stages, handleClick }) => (
         <div className="stagesBackground stagesBackgroundPosition">
             <ul className="stagesGrid gridPosition">
             {
-                stages.map((stage, index) =>
+                stages.map((stage) =>
 
                     <Link to = { `stages/${ stage.id }` } className="linkStyle"> 
                         <li key = { stage.id }
