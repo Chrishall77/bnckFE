@@ -12,7 +12,7 @@ const StageInfo = ({ location }) => {
     return (
         <>
             <Header>NAME</Header>
-            <div className="stageBackground stageBackgroundPosition">
+            <div className="stageInfoBackground stageInfoBackgroundPosition">
                 <Performances 
                     referrer={ referrer }
                     id={ id }
