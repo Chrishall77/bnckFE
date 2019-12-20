@@ -26,9 +26,6 @@ export default class Performances extends React.Component {
                             let artistName = artists.find((artist)=> {
                                 return artist.id === performance.artist_id;
                             })
-        
-
-                            return (
 
                             let formatDate = (date) => {
 
