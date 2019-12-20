@@ -11,8 +11,8 @@
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    height: 70vh;
-    width: 520px;
+    height: 100vh;
+    width: 100vw;
     background-size: cover;
     position: relative;
 
@@ -57,30 +57,38 @@
     font-weight: bold;
     text-decoration: none;
     color: $colourGreen;
+    text-decoration: none;
 }
 
 .buttonStyleFour {
-    height: 75px;
-    width: 175px;
+    height: 10vh;
+    width: 20vw;
     background: $colourLightOrange;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
+    text-decoration: none;
+}
+
+.buttonStyleFour p {
+    text-decoration: none;
 }
 
 .buttonStyleFive {
-    height: 75px;
-    width: 275px;
+    height: 10vh;
+    width: 40vw;
     background: $colourLightOrange;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .performanceButton {
     text-align: center;
+    text-decoration: none;
 }

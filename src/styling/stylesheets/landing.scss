@@ -12,8 +12,8 @@
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
-    width: auto;
-    height: 50vh;
+    width: 100vw;
+    height: 70vh;
     background-size: cover;
     padding: 10px;
     position: relative;
@@ -47,7 +47,7 @@
 }
 
 .buttonStyleOne {
-    height: 100px;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
