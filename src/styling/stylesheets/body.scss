@@ -11,6 +11,18 @@ body {
     height: 100vh;
     font-family: 'Roboto', arial, sans-serif;
     color: $colourGreen;
+    a{
+        color: $colourGreen;
+    }
+
+    a:visited {
+        color: $colourGreen;
+    }
+
+    a:hover {
+        color: $colourGreen;
+    }
+
 }
 
 .landingContainer {
