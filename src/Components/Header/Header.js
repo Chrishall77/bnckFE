@@ -5,7 +5,7 @@ import burger from '../../styling/assets/burger.svg';
 const Header = ({ children }) => (
     <>
         <div className="banner">
-            <div className="navLink"> <a href="../../"><img src={potato} /></a></div>
+            <div className="navLink"> <a href="../"><img src={potato} /></a></div>
             <h1 className="bannerTitle"> { children }</h1>
             <div className="navBurger"> <img src={burger} /> </div>
         </div>
