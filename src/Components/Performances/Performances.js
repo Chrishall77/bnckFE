@@ -28,9 +28,6 @@ export default class Performances extends React.Component {
                             let artistName = artists.find((artist)=> {
                                 return artist.id === performance.artist_id;
                             })
-        
-
-                    
 
                             let formatDate = (date) => {
 
@@ -39,9 +36,7 @@ export default class Performances extends React.Component {
                             }
 
                             let starttime = new Date(performance.starttime);
-                            let endtime = new Date(performance.starttime);
-                            console.log(starttime);
-                            console.log(endtime);
+                            let endtime = new Date(performance.endtime);
                             
 
                             return (
