@@ -1,3 +1,69 @@
+TEAM 3 - Documentation
+
+BNCK Fest 
+
+IDEA
+A festival app for BNCK Fest music festival, displaying useful information such as times of performances and which artists are playing.
+
+OBJECTIVES
+	▪	To create an easy to use app showing information about BNCK Fest
+	▪	Create components in React and getting them to output the information from the Laravel database
+	▪	Display all artists, stages, individual stages and artist biography from database
+	▪	Create a mobile first responsive layout
+	▪	Link all the pages to one another using the sitemap as a guide
+
+PLANNING
+We created a sitemap first that sets out how each page will connect to each other
+We also created a wireframe of the layout for each main page.
+We created a colour pallet that reflected the vibe of the festival
+
+CONTENT
+	▪	An inviting landing page that reflects the vibe of the festival
+	▪	A list of all four stages at the festival
+	▪	A page for each of the four stages, detailing which artists are playing there and when
+	▪	A list of all the artists performing at the festival
+	▪	An artist biography page for each performing artist showing a picture and a paragraph of text about them
+
+INSTALLATION
+Cd into desired location
+Git clone git@github.com:Chrishall77/bnckFE.git {foldername}
+Cd {foldername}
+Npm install axis
+Npm install react
+Npm install react-redux
+Npm install react-router-dom
+Npm install react-scripts
+Npm install redux
+Npm install redux-thunk
+Npm install rect-dom
+Npm start
+
+Download and follow instructions for back end:
+https://github.com/NicJr1110/BNCK-laravel 
+
+COMPONENTS
+Header
+Landing page
+List of all stages
+Stage info
+List of all artists
+Artist Bio
+
+STYLING
+The components were styled using SASS. We created an scss file for each component which outputs everything into a main css file, which is then imported in index.js. 
+
+DESCRIPTION
+The app is aimed at mobile devices first and foremost, but the app is responsive to the size of the device. The header displays a potato icon that routes you back to the landing page, and a burger menu - although not finished, the aim of this would be to open a menu of all pages you can navigate to.
+The design of each page is clean and simple for user friendliness purposes, and each page has a large button with text in a complimentary colour for readability.
+
+STRETCH GOALS - for the future
+	▪	Create interactive menu for the burger
+	▪	Ability to POST and PUT items in the database
+	▪	Create a page displaying venue information, such as address, contact info
+	▪	Create a map page
+	▪	Create a FAQ
+	
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
