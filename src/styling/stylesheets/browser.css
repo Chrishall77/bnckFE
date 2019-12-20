@@ -100,7 +100,12 @@ body {
   font-size: 15vh;
   font-weight: bolder;
   font-family: "Montserrat", arial, sans-serif;
-  margin-top: 17vh;
+  margin-top: 15vh;
+}
+
+.linkStyle {
+  text-decoration: none;
+  text-align: center;
 }
 
 .buttonStyleOne {
@@ -111,7 +116,6 @@ body {
   width: auto;
   font-size: 25px;
   font-weight: bolder;
-  text-decoration: none;
   color: #516D73;
 }
 
@@ -324,7 +328,7 @@ body {
 
 .buttonStyleFour {
   height: 75px;
-  width: 100px;
+  width: 175px;
   background: #F29D52;
   display: flex;
   justify-content: center;
@@ -335,13 +339,17 @@ body {
 
 .buttonStyleFive {
   height: 75px;
-  width: 300px;
+  width: 275px;
   background: #F29D52;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 10px 10px 10px;
   border-radius: 5px;
+}
+
+.performanceButton {
+  text-align: center;
 }
 
 .artistBioBackgroundPosition {
@@ -395,6 +403,69 @@ body {
 
 .bigLoggerBackground {
   background-image: url("../images/bigLoggerBackground.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: auto;
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+}
+
+.cathedralBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.cathedralBackground {
+  background-image: url("../images/cathedralBackground.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 70vh;
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+}
+
+.duttyDiscoBackgroundPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.duttyDiscoBackground {
+  background-image: url("../images/duttyDiscoBackground.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: auto;
+  background-size: cover;
+  padding: 10px;
+  position: relative;
+}
+
+.smoothMooversPosition {
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.smoothMooversBackground {
+  background-image: url("../images/cathedralBackground.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;

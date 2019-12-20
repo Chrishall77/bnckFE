@@ -12,9 +12,11 @@ export default class Performances extends React.Component {
 
 
     render() {
-        const {performances, stages, titleStage, artists } = this.props;
+
+        const {performances, stages, titleStage, artists, id } = this.props;
+
         return(
-            <div>
+            <div className={`performanceBackground stage${id}`}>
                 <ul className="performanceWrapper">
                     {
                         performances.map((performance) => {
@@ -27,6 +29,9 @@ export default class Performances extends React.Component {
                                 return artist.id === performance.artist_id;
                             })
         
+
+                    
+
                             let formatDate = (date) => {
 
                                 return date.toLocaleTimeString();
@@ -35,9 +40,12 @@ export default class Performances extends React.Component {
 
                             let starttime = new Date(performance.starttime);
                             let endtime = new Date(performance.starttime);
+                            console.log(starttime);
+                            console.log(endtime);
                             
 
                             return (
+
         
                                 <li className="artist" key={ performance.id }>
                                     <div className="buttonStyleFour timeButtonTime">
@@ -45,9 +53,13 @@ export default class Performances extends React.Component {
                                         <p>End: { formatDate(endtime) } </p>
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
+<<<<<<< HEAD
                                     <Link to = { `../artists/${ performance.artist_id }` } > 
                                         <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
                                     </Link>
+=======
+                                        <p>{ titleStage ? stageName.name : artistName.name }</p>
+>>>>>>> master
                                     </div>
                                 </li>
                             )

@@ -61,7 +61,7 @@
 
 .buttonStyleFour {
     height: 75px;
-    width: 100px;
+    width: 175px;
     background: $colourLightOrange;
     display: flex;
     justify-content: center;
@@ -72,11 +72,15 @@
 
 .buttonStyleFive {
     height: 75px;
-    width: 300px;
+    width: 275px;
     background: $colourLightOrange;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
+}
+
+.performanceButton {
+    text-align: center;
 }
