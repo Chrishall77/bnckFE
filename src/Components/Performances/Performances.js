@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -52,7 +53,9 @@ export default class Performances extends React.Component {
                                         <p>End: { formatDate(endtime) } </p>
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
-                                        <p>{ titleStage ? stageName.name : artistName.name }</p>
+                                    <Link to = { `../artists/${ performance.artist_id }` } > 
+                                         <p>{ titleStage ? stageName.name : artistName.name }</p>
+                                    </Link>
                                     </div>
                                 </li>
                             )
