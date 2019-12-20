@@ -13,7 +13,7 @@ export default class Performances extends React.Component {
 
     render() {
 
-        const {performances, stages, titleStage, artists, id } = this.props;
+        const {performances, stages, titleStage, referrer, artists, id } = this.props;
 
         return(
             <div className="performanceBackground">
@@ -49,7 +49,7 @@ export default class Performances extends React.Component {
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
                                     <Link to = { `../artists/${ performance.artist_id }` } > 
-                                         <p>{ titleStage ? stageName.name : artistName.name }</p>
+                                         <p>{ referrer === "artists" ? stageName.name : artistName.name }</p>
                                     </Link>
                                     </div>
                                 </li>
