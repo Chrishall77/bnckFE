@@ -52,6 +52,15 @@ body {
   font-family: "Roboto", arial, sans-serif;
   color: #516D73;
 }
+body a {
+  color: #516D73;
+}
+body a:visited {
+  color: #516D73;
+}
+body a:hover {
+  color: #516D73;
+}
 
 .landingContainer {
   padding: 20px 10px 20px 10px;
