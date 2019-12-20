@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 
 const ArtistBio = ({ location, artists }) => {
     const { pathname } = location;
-    const [ ,referrer, id ] = pathname.split("/")
+    const [ ,, referrer, id ] = pathname.split("/")
 
     // let stageName = stages.find((stage)=> {
     //     return stage.id === performance.stage_id;

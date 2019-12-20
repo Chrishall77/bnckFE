@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 
 const StageInfo = ({ location, stages }) => {
     const { pathname } = location;
-    const [ ,referrer, id ] = pathname.split("/")
+    const [ ,,referrer, id ] = pathname.split("/")
     
    console.log(stages);
 
