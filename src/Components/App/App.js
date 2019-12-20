@@ -23,11 +23,11 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <Route exact path="/" component = { Landing } />
-          <Route exact path="/artists" component={ Artists } />
-          <Route exact path="/stages" component={ Stages }/>
-          <Route exact path="/stages/:id" component={ StageInfo } />
-          <Route exact path="/artists/:id" component={ ArtistBio } />
+          <Route exact path="/bnckFE" component = { Landing } />
+          <Route exact path="/bnckFE/artists" component={ Artists } />
+          <Route exact path="/bnckFE/stages" component={ Stages }/>
+          <Route exact path="/bnckFE/stages/:id" component={ StageInfo } />
+          <Route exact path="/bnckFE/artists/:id" component={ ArtistBio } />
           {/* <Performances titleStage = { false } /> */}
         </div>
       </Router>

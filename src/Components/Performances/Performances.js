@@ -54,7 +54,7 @@ export default class Performances extends React.Component {
                                         { formatDate(endtime) }</p>
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
-                                    <Link to = { `../artists/${ performance.artist_id }` } > 
+                                    <Link to = { `bnckFE/artists/${ performance.artist_id }` } > 
                                          <p>{ referrer === "artists" ? stageName.name : artistName.name }</p>
                                     </Link>
                                     </div>
