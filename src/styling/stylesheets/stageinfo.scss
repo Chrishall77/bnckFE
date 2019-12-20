@@ -1,4 +1,4 @@
-.bigLoggerBackgroundPosition {
+.stageInfoBackgroundPosition {
     margin: 20px 10px 20px 10px;
     padding: 20px 10px;
     display: block;
@@ -7,7 +7,7 @@
     overflow: scroll;
 }
 
-.bigLoggerBackground {
+.stageInfoBackground {
     background-image: url('../images/bigLoggerBackground.jpg');
     background-position: center;
     background-attachment: scroll;
@@ -17,8 +17,4 @@
     background-size: cover;
     padding: 10px;
     position: relative;
-}
-
-.stage1 {
-    // BIG LOGGER STYLE HERE
 }

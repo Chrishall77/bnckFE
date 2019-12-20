@@ -38,7 +38,12 @@
     font-size: $fontSizeLogo;
     font-weight: bolder;
     font-family: 'Montserrat', arial, sans-serif;
-    margin-top: 17vh;
+    margin-top: 15vh;
+}
+
+.linkStyle {
+    text-decoration: none;
+    text-align: center;
 }
 
 .buttonStyleOne {
@@ -49,7 +54,6 @@
     width: auto;
     font-size: $fontSizeLarge;
     font-weight: bolder;
-    text-decoration: none;
     color: $colourGreen;
 }
 
