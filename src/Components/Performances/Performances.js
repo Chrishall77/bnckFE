@@ -53,13 +53,9 @@ export default class Performances extends React.Component {
                                         <p>End: { formatDate(endtime) } </p>
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
-<<<<<<< HEAD
                                     <Link to = { `../artists/${ performance.artist_id }` } > 
-                                        <p>{ titleStage ? "Stage: " + stageName.name : "Artist: " + artistName.name }</p>
+                                         <p>{ titleStage ? stageName.name : artistName.name }</p>
                                     </Link>
-=======
-                                        <p>{ titleStage ? stageName.name : artistName.name }</p>
->>>>>>> master
                                     </div>
                                 </li>
                             )
