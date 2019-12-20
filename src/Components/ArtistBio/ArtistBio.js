@@ -11,7 +11,8 @@ const ArtistBio = ({ artist }) => (
             <div className="artistBioBackground artistBioBackgroundPosition artistName" id="artist#">
                 <img className="artistBioImage" src="https://placebear.com/200/300" />
                 <div className="artistBioText">
-                    <p>Hello World!</p>
+                    <p>{ artist.name }</p>
+                    <p>{ artist.bio }</p>
                 </div>
                 <div className="artistStages">
                     <Performances titleStage={ true }/>

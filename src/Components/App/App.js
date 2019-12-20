@@ -31,7 +31,7 @@ class App extends React.Component {
           <Route exact path="/artists" component={ Artists } />
           <Route exact path="/stages" component={ Stages }/>
           <Route exact path="/stages/:id" component={ StageInfo } />
-          <Route exact path="/artist/:id" component={ ArtistBio } />
+          <Route exact path="/artists/:id" component={ ArtistBio } />
           {/* <Performances titleStage = { false } /> */}
         </div>
       </Router>
