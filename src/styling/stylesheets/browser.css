@@ -390,6 +390,7 @@ body {
 .artistBioText {
   max-width: 80vw;
   overflow: scroll;
+  margin: 0 auto;
   font-family: "Open Sans";
   font-size: 15px;
   padding: 10px;
@@ -424,7 +425,7 @@ body {
 }
 
 .stage1 {
-  background-image: url("../images/bigLoggerBackground.jpg");
+  background-image: url("../images/bigLoggerBackground2.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -443,7 +444,7 @@ body {
 }
 
 .stage3 {
-  background-image: url("../images/cathedralBackground.jpg");
+  background-image: url("../images/cathedralBackground2.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -462,7 +463,7 @@ body {
 }
 
 .stage2 {
-  background-image: url("../images/duttyDiscoBackground.jpg");
+  background-image: url("../images/duttyDiscoBackground2.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -481,7 +482,7 @@ body {
 }
 
 .stage4 {
-  background-image: url("../images/smoothMooversBackground.jpg");
+  background-image: url("../images/smoothMooversBackground2.jpg");
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
