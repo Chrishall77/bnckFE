@@ -38,6 +38,8 @@ export default class Performances extends React.Component {
 
                             let starttime = new Date(performance.starttime);
                             let endtime = new Date(performance.starttime);
+                            console.log(starttime);
+                            console.log(endtime);
                             
 
                             return (
@@ -46,6 +48,7 @@ export default class Performances extends React.Component {
                                 <li className="artist" key={ performance.id }>
                                     <div className="buttonStyleFour timeButtonTime">
                                         <p>Start: { formatDate(starttime) } </p>
+                                        <p>{ performance.id }</p>
                                         <p>End: { formatDate(endtime) } </p>
                                     </div>
                                     <div className="buttonStyleFive timeButtonArtist">
